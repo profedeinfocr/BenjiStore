@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="CSS/Estilo.css" rel="stylesheet" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 </head>
@@ -14,15 +15,15 @@
     <form id="form1" runat="server">
         <p>
             Seleccione el producto:&nbsp;&nbsp;
-            <asp:DropDownList ID="DropProducto" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre_producto" DataValueField="nombre_producto">
+            <asp:DropDownList ID="DropProducto" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre_producto" DataValueField="codigo_producto">
             </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BenjiStoreConnectionString %>" SelectCommand="SELECT [nombre_producto] FROM [Productos]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BenjiStoreConnectionString %>" SelectCommand="SELECT * FROM [Productos]"></asp:SqlDataSource>
         </p>
         <p>
             Seleccione el Cajero:&nbsp;
-            <asp:DropDownList ID="DropCajero" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre_cajero" DataValueField="nombre_cajero">
+            <asp:DropDownList ID="DropCajero" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre_cajero" DataValueField="codigo_cajero">
             </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:BenjiStoreConnectionString2 %>" SelectCommand="SELECT [nombre_cajero] FROM [Cajeros]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:BenjiStoreConnectionString2 %>" SelectCommand="SELECT * FROM [Cajeros]"></asp:SqlDataSource>
 &nbsp;&nbsp;&nbsp;
         </p>
         <p>
