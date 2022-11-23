@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\Estilo.css" />
     <Content Include="SQL\SQLQuery1BenjiStore.sql" />
     <Content Include="Ventas.aspx" />
     <Content Include="Web.config" />

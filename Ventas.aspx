@@ -13,6 +13,15 @@
         <br />
     </p>
     <form id="form1" runat="server">
+                  <ul>
+  <li><a >Profe</a></li>
+  <li><a >No</a></li>
+  <li><a >Sea</a></li>
+  <li><a >Concho</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+
+
         <p>
             Seleccione el producto:&nbsp;&nbsp;
             <asp:DropDownList ID="DropProducto" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre_producto" DataValueField="codigo_producto">
